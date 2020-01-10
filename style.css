@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+}
+
+
+header h1 {
+  margin-bottom: 20px;
+
+}
+
+.navigazione_mesi button {
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  border: 0;
+  padding: 10px;
+}
+
+main {
+  width: 300px;
+  margin: 0 auto;
+
+}
+
+#calendario li {
+  margin: 10px;
+}
+
+.festa {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+/*
