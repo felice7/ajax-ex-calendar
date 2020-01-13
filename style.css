@@ -1,55 +1,120 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
-
 }
 
-header {
-  height: 100px;
+body {
+  background-color: #4CAF50;
+  color: #4E4F4A;
+  min-height: 100vh;
+  font-family: 'Montserrat';
+  font-weight: 700;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
-
-}
-
-
-header h1 {
-  margin-bottom: 20px;
-
-}
-
-.navigazione_mesi button {
-  background-color: blue;
-  color: white;
-  font-size: 15px;
-  border: 0;
-  padding: 10px;
+  justify-content: center;
 }
 
 main {
-  width: 300px;
-  margin: 0 auto;
-
+  background-color: #F6E9DC;
+  box-shadow: 0px 0px 0px 2px #4CAF50, 10px 10px 20px 10px rgba(78, 79, 74, 0.5);
 }
 
-#calendario li {
-  margin: 10px;
+header {
+  width: 1000px;
+  height: 150px;
+  margin: 50px auto;
+  text-align: center;
 }
 
-.festa {
-  color: red;
+header::after {
+  content: '';
+  width: 1000px;
+  height: 2px;
+  display: inline-block;
+  margin-top: 30px;
+  /* flex-basis: 980px; */
 }
 
+.button_container {
+  display: inline-block;
+  width: 65px;
+  margin: 30px;
+}
 
+#prev_month {
+  display: none;
+}
 
+#mese_prec,
+#mese_succ {
+  font-size: 50px;
+  color: #4CAF50;
+  background-color: transparent;
+  padding: 20px;
+  border: none;
+}
 
+#mese_corrente {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #4E4F4A;
+  color: #F6E9DC;
+  letter-spacing: 0.2em;
+  padding: .5rem 2rem;
+  text-transform: uppercase;
+}
 
+#giorni_settimana {
+  border-top: 5px solid #4CAF50;
+  border-bottom: none;
+  vertical-align: middle;
+}
 
+#giorni_settimana span {
+  width: 130px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #4E4F4A;
+  margin-right: 10px;
+  padding: .5rem;
+}
 
+#calendario {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 3px solid #4CAF50;
+}
 
+.day_box {
+  width: calc(100% / 7);
+  height: 100px;
+  border: 3px solid #4CAF50;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.day_box.vacation {
+  background-color:#4CAF50;
+  color: #4E4F4A;
+  font-weight: bold;
+}
+
+.day_box.vacation span:last-child {
+  text-align: center;
+}
+
+.holiday {
+  font-size: 12px;
+}
 
 /*
